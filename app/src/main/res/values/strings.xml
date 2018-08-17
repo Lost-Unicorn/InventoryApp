@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Books</string>
+    <string name="actvity_books">Books</string>
+    <string name="action_insert_dummy_data">Insert Dummy Data</string>
+    <string name="action_delete_all_entries">Delete All Books</string>
+    <string name="editor_activity_add_new_book">Add a Book</string>
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+
+
+    <string name="book_name">Book</string>
+    <string name="hint_book_name">Book</string>
+    <string name="price">Price</string>
+    <string name="hint_price">Price</string>
+    <string name="qty">Quantity</string>
+    <string name="hint_qty">Quantity</string>
+    <string name="supplier">Supplier</string>
+    <string name="supplier_name">Supplier</string>
+    <string name="hint_supplier_name">Supplier</string>
+    <string name="supplier_phone">Supplier Phone Number</string>
+    <string name="hint_supplier_phone">Supplier Phone Number</string>
+
+
+</resources>
