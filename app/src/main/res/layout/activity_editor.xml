@@ -16,6 +16,7 @@
         <!-- Label -->
         <TextView
             style="@style/BookStyle"
+            android:layout_width="50dp"
             android:text="@string/actvity_books" />
 
         <!-- Input fields -->
@@ -33,13 +34,60 @@
                 style="@style/EditorFieldStyle"
                 android:hint="@string/hint_book_name"
                 android:inputType="textCapWords" />
-
-            <!-- Price field -->
+            <!-- Name field -->
             <EditText
-                android:id="@+id/edit_book_price"
+                android:id="@+id/edit_book_author"
                 style="@style/EditorFieldStyle"
-                android:hint="@string/hint_price"
+                android:hint="@string/hint_book_author"
                 android:inputType="textCapWords" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Overview category -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            style="@style/BookStyle"
+            android:layout_width="wrap_content"
+            android:text="@string/qty" />
+
+        <!-- Input fields -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:paddingLeft="4dp"
+            tools:ignore="RtlHardcoded">
+
+            <Button
+                android:id="@+id/plus"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/book_margin"
+                android:text="@string/plus"
+                android:visibility="visible" />
+
+            <!-- Name field -->
+            <EditText
+                android:id="@+id/edit_quantity"
+                style="@style/EditorFieldStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_qty"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/minus"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/minus" />
 
         </LinearLayout>
     </LinearLayout>
@@ -54,23 +102,24 @@
         <!-- Label -->
         <TextView
             style="@style/BookStyle"
-            android:text="@string/qty" />
+            android:layout_width="50dp"
+            android:text="@string/price" />
 
         <!-- Input fields -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:paddingLeft="4dp"
             tools:ignore="RtlHardcoded">
 
-            <!-- Name field -->
+            <!-- Price field -->
             <EditText
-                android:id="@+id/edit_quantity"
+                android:id="@+id/edit_book_price"
                 style="@style/EditorFieldStyle"
-                android:hint="@string/hint_qty"
-                android:inputType="textCapWords" />
+                android:hint="@string/hint_price"
+                android:inputType="numberDecimal" />
 
 
         </LinearLayout>
@@ -78,12 +127,13 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="47dp"
         android:orientation="horizontal">
 
         <!-- Label -->
         <TextView
             style="@style/BookStyle"
+            android:layout_width="wrap_content"
             android:text="@string/supplier" />
 
         <!-- Input fields -->
@@ -102,13 +152,49 @@
                 android:hint="@string/supplier_name"
                 android:inputType="textCapWords" />
 
-            <!-- Price field -->
+            <!-- Label -->
+            <TextView
+                style="@style/BookStyle"
+                android:text="@string/supplier" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            style="@style/BookStyle"
+            android:layout_width="51dp"
+            android:layout_height="match_parent"
+            android:text="@string/supplier_phone" />
+
+        <!-- Input fields -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:paddingLeft="4dp"
+            tools:ignore="RtlHardcoded">
+
+            <!-- Name field -->
             <EditText
                 android:id="@+id/edit_phone"
                 style="@style/EditorFieldStyle"
-                android:hint="@string/supplier_phone"
+                android:autoLink="phone"
+                android:hint="@string/hint_supplier_phone"
                 android:inputType="phone" />
 
+            <!-- Label -->
+            <TextView
+                style="@style/BookStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:text="@string/supplier_phone" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
